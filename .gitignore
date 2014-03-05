@@ -1,0 +1,55 @@
+# User specific & automatically generated files #
+#################################################
+/www/img/gal/*
+/www/img/thumbnails/*
+
+# PHP #
+*.php
+
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.tar
+*.gz
+*.tar.gz
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.bundle/
+Icon?
+ehthumbs.db
+Thumbs.db
+
+# Foundation Stuff #
+####################
+.sass-cache
+*.vagrant
+tmp/shared/*
+node_modules/
+Gemfile.lock
+
+public/php.php
+
+!*.gitkeep
+!tmp/db.sql

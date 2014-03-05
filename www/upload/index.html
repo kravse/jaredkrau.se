@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/foundation.css" />
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,900' rel='stylesheet' type='text/css'>
+
+        <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
+
+    </head>
+    <body id="uploads">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <a id="grey" href="javascript:void(0)" class="grey hidden">
+        </a>
+        <div class="popup hidden">
+            <img src="../img/default-thumb.png" class='popup-thumb'>
+            <div class="popup-text">
+            </div>
+            <div class="popup-buttons">
+                <a href="javascript:void(0)" id="popup-confirm" data-index="" data-action="" class="popup-confirm"></a>
+                <a href="javascript:void(0)" id="popup-cancel" class="popup-cancel"></a>
+            </div>
+        </div>
+        <div class="row full-width">
+            <div class="columns small-12 uploader hidden">
+                <form enctype="multipart/form-data" action="php/up.php" method="POST" class="upload-form">
+                    <h1>Photo Uploader</h1>
+                    <input type="file" name="file" class="hidden-form-element" id="form-button">
+                    <input type="submit" name="submit" value="Submit" id="submit" class="hidden-form-element">
+                   
+                    <textarea placeholder="Description." name="text" id="text" class="textarea"></textarea>
+
+                    <a id="button-link" class="button-link button form-button" href="javascript:void(0)"/>CHOOSE</a>
+                    <a id="submit-link" class="submit-link button form-button" href="javascript:void(0)"/>UPLOAD</a>
+                </form>
+            </div>
+
+            <div class="columns small-12 editor">
+                <div class="row full-width text-center">
+                    <div class="top-nav">
+                        <div class="columns small-4 large-2 uploader-container">
+                            <a id="uploader-link" class="upload-link" href="javascript:void(0)">UPLOAD</a>
+                        </div>
+                        <div class="columns small-8 large-10">
+                            <div class="buttons-holder">
+                                <a id="next-button" class="button next-button" href="javascript:void(0)">NEXT</a>
+                                <a id="previous-button" class="button previous-button" href="javascript:void(0)">PREV</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class='archive-image-holder'>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="../js/plugins.js"></script>
+        <script src="js/upload.js"></script>
+        <script>
+            $(function() {
+                UploadMain.init();           
+            });
+
+        </script>
+        <script src="../js/foundation.min.js"></script>
+    </body>
+</html>

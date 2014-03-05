@@ -1,0 +1,246 @@
+
+
+@media (max-width:1025px){
+	.content-container{
+
+		.left{
+			background-position:center 25%;
+			opacity:0.8;
+		}
+		.right{
+			background-position:center 25%;
+			opacity:0.8;
+		}
+		.left:hover{
+			opacity:0.8;
+		}
+
+		.right:hover{
+			opacity:0.8;
+		}
+		.archive-page{
+			.archive-thumb{
+				border:none;
+			}
+			.archive-thumb:hover{
+				border:none;
+
+			}
+		}
+
+	}
+
+
+}
+
+@media(max-width:1000px){
+	.popup-img{
+		margin-left:-50%;
+	}
+}
+
+
+@media (max-width: 640px) {
+	.loader{
+		background-image:url('../img/load.gif');
+		background-position: center 15%;
+		background-size:16px;
+		background-repeat:no-repeat;
+	}
+	.grey-cover{
+		display:none;
+	}
+
+	.popup-img{
+		display:none;
+	}
+	.nav-top-section{
+		display:none;
+
+	}
+	.top-grey{
+		display:none;
+	}
+
+	.mobile-menu{
+		position:absolute;
+		top:55px;
+		width:150px;
+		right:10px;		
+		height:500px;
+		z-index:0; 
+		display:block;
+		.mobile-home{
+			width:40px;
+			height:40px;
+			display:block;
+			background: url('../img/logosmall.png') no-repeat center top;
+			background-size:100%;
+
+		}
+
+		ul{
+			list-style-type: none;
+			margin-top:8px;
+			margin-bottom:0;
+			margin-left:0;
+			padding-left:0;
+
+			li{
+				
+				margin:10px 0 0 2px;
+				width:100%;
+				a{
+					font-family: 'Lato', sans-serif;
+					font-weight: 300;
+					font-size:23px;
+					color:#333;
+					text-align: right;
+					text-decoration: none;
+					-webkit-text-size-adjust: 100%;
+					-moz-text-size-adjust: 100%;
+					-ms-text-size-adjust: 100%;
+					text-rendering: geometricPrecision;
+
+				}
+
+				.social{
+					font-size:15px;
+					font-weight:600;
+				}
+
+			}
+		}
+	}
+
+	.nav-row{
+		.nav{
+			
+			padding:0;
+
+			.mobile-menu-trigger{
+				font-family: 'Lato', sans-serif;
+				font-weight: 900;
+				font-size:25px;
+				color:#333;
+				float:right;
+				padding:12px 5px;
+				display:inline-block;
+				text-decoration:none;
+			}
+
+			img{
+				width:50px;
+				padding:5px;
+			}
+
+			.home-link{
+				width:30%;
+				display:inline-block;
+
+			}
+			ul{
+				list-style-type: none;
+				margin-left:25%;
+				display:none;
+
+				li{
+					display: inline-block;					
+					width:15%;
+
+					a{
+						display:inline-block;
+					}
+					
+				}
+			}
+
+			.social{
+				display:none;
+			}
+			.info{
+				display:none;
+			}
+
+			
+		}
+
+	}
+
+	.content-container{
+		background-color:transparent;
+
+		h1, h2, h3, h4, h5, h6{
+			font-size:30px;
+
+		}
+
+		p{
+			padding-left:20px;
+			color:#fff;
+			width:95%;
+			font-size:20px;
+			font-family: 'Lato', sans-serif;
+			font-weight:300;
+			margin-bottom:20px; 
+
+		}
+
+		.portrait{
+			max-width:640px;
+		}
+		.main-image-wrapper{
+			overflow:visible;
+			background-size:100%;
+			padding-bottom:150%;
+		}
+
+		.left{
+			position:absolute;
+			top:-51px;
+			left:80px;
+			opacity:1;
+			width:50px;
+			height:50px;
+			background:url('../img/naked-arrow-left.png') no-repeat left center;
+		}
+		.left:hover{
+			opacity:1;
+		}
+
+		.right{
+			position:absolute;
+			top:-51px;
+			right:80px;
+			opacity:1;
+			width:50px;
+			height:50px;
+			background:url('../img/naked-arrow-right.png') no-repeat right center;
+		}
+		.right:hover{
+			opacity:1;
+		}
+
+		.archive-page{
+			.archive-buttons-holder{
+				top:14px;
+			}
+			.archive-button:hover{
+				background-color:transparent; 
+			}
+
+		}
+
+	}
+
+	#uploads{
+		.upload-link{
+			font-size:25px;
+			padding-top:36px;
+		}
+
+
+	}
+
+}
+
