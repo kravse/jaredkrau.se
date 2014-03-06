@@ -4,7 +4,7 @@
 /www/img/thumbnails/*
 
 # PHP #
-*.php
+/www/php/login.php
 
 # Compiled source #
 ###################
