@@ -3,7 +3,7 @@
     include 'login.php';
 
     $json = array();
-    $link = mysqli_connect($host, $user, $pass, $db);
+    $link = mysqli_connect($host, $user, $pass, $db) or die("Error " . mysqli_error($link));
     $result = mysqli_query ($link, 'SELECT * FROM '.$table.' ORDER BY datetime');
     while($row = mysqli_fetch_array ($result)){
 
@@ -19,4 +19,5 @@
 
     $jsonstring = json_encode($json);
     echo $jsonstring;
+    mysql_close($link);
 ?>

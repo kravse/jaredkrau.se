@@ -10,8 +10,6 @@ var Archive = (function(){
         current = 0; 
         populate(current);
 
-
-
         $('#archive-next-button').click(function(){
           if(((current*12)+max%12)<max){
             current++; 
@@ -85,15 +83,15 @@ var Content = (function(){
         initArrows(jsonArray.length);
 
         $('#main-image-wrapper').click(function(){
-           openLightbox();
+          openLightbox();
         });
 
         $('.grey-cover').click(function(){
-            closeLightbox();
+          closeLightbox();
         });
 
         $('.popup-img').click(function(){
-           closeLightbox();
+          closeLightbox();
         });
 
 
