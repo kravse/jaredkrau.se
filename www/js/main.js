@@ -25,14 +25,8 @@ var Archive = (function(){
           }
           $('.archive-row').html('');
           populate(current);
-
         });
 
-        $(document).on('click', '.archive-image', function(){
-          var index = $(this).data('index');
-          window.location.href = "#"+index;
-          location.reload();
-        });
     }   
 
     function populate(where){
@@ -179,8 +173,35 @@ var Navigation = (function() {
     function init() {
         Nav();  
     }
+
+    function goHome(){
+        $('.main-page-arrows').removeClass('hidden');
+        $('.content-container').addClass('loader');
+        $('.info').removeClass('hidden');
+        setTimeout(function(){
+          $('.info').removeClass('fade');
+        },50);
+        changeCurrent("home");
+
+    }
+
+    function changeCurrent(newpage){
+        $('.current').addClass('fade').addClass('hidden').removeClass('current');
+        $('.'+newpage+'-page').addClass('current').removeClass('hidden');
+        setTimeout(function(){
+            $('.'+newpage+'-page').removeClass('fade');
+        },0);
+    }
+
     
     function Nav(){
+
+       $(document).on('click', '.archive-image', function(){
+          var index = $(this).data('index');
+          window.location.href = "#"+index;
+          goHome();
+        });
+
        $(document).on('click', '.nav-link', function(){
             $( ".container" ).animate({
                 left: "0"
@@ -195,18 +216,10 @@ var Navigation = (function() {
                 $('.info').addClass('hidden');
               },50);
             }else{
-              $('.main-page-arrows').removeClass('hidden');
-              $('.content-container').addClass('loader');
-              $('.info').removeClass('hidden');
-              setTimeout(function(){
-                $('.info').removeClass('fade');
-              },50);
+              goHome();
             }
-            $('.current').addClass('fade').addClass('hidden').removeClass('current');
-            $('.'+location+'-page').addClass('current').removeClass('hidden');
-            setTimeout(function(){
-                $('.'+location+'-page').removeClass('fade');
-            },0);
+            changeCurrent(location);
+           
         });
 
        $('.mobile-menu-trigger').click(function(){
