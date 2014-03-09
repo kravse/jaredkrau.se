@@ -877,7 +877,7 @@ textarea {
   color: #fff;
 }
 /* line 224, ../../src/scss/_main.scss */
-.content-container .main-image-wrapper {
+.content-container .home-page {
   display: block;
   position: relative;
   height: 0;
@@ -887,7 +887,7 @@ textarea {
   background-size: contain;
 }
 /* line 234, ../../src/scss/_main.scss */
-.content-container .main-image-wrapper .loader {
+.content-container .home-page .loader {
   width: 31px;
   position: absolute;
   left: 50%;
@@ -1526,7 +1526,7 @@ textarea {
     max-width: 640px;
   }
   /* line 192, ../../src/scss/_media.scss */
-  .content-container .main-image-wrapper {
+  .content-container .home-page {
     overflow: visible;
     background-size: 100%;
     padding-bottom: 150%;

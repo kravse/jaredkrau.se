@@ -76,7 +76,7 @@ var Content = (function(){
         max = jsonArray.length; 
         initArrows(jsonArray.length);
 
-        $('#main-image-wrapper').click(function(){
+        $('#home-page').click(function(){
           openLightbox();
         });
 
@@ -103,7 +103,7 @@ var Content = (function(){
     }
 
     function openLightbox(){
-        var current = $('#main-image-wrapper').data('current');
+        var current = $('#home-page').data('current');
         $('.grey-cover').removeClass('hidden');
         $('.popup-img').css({'background-image': 'url("../img/gal/'+jsonArray[current].code+'")'}).removeClass('hidden');
 
@@ -152,7 +152,7 @@ var Content = (function(){
         var image = new Image();
         image.src = "../img/gal/"+jsonArray[page].code;
         image.onload = function(){
-          $('.main-image-wrapper').css({
+          $('.home-page').css({
             "background-image": "url('../img/gal/"+jsonArray[page].code+"')"
           }).data('current', page);
           $('#text-description').text(jsonArray[page].about);
