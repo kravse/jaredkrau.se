@@ -5,27 +5,27 @@ var Archive = (function(){
     var max;
 
     function init(_jsonArray){ 
-        jsonArray = _jsonArray;
-        max = jsonArray.length; 
-        current = 0; 
+      jsonArray = _jsonArray;
+      max = jsonArray.length; 
+      current = 0; 
+      populate(current);
+
+      $('#archive-next-button').click(function(){
+        if(((current*12)+max%12)<max){
+          current++; 
+        }
+        $('.archive-row').html('');
         populate(current);
 
-        $('#archive-next-button').click(function(){
-          if(((current*12)+max%12)<max){
-            current++; 
-          }
-          $('.archive-row').html('');
-          populate(current);
+      });
 
-        });
-
-        $('#archive-previous-button').click(function(){
-          if(current>0){
-            current--; 
-          }
-          $('.archive-row').html('');
-          populate(current);
-        });
+      $('#archive-previous-button').click(function(){
+        if(current>0){
+          current--; 
+        }
+        $('.archive-row').html('');
+        populate(current);
+      });
 
     }   
 
@@ -74,6 +74,7 @@ var Content = (function(){
     function init(_jsonArray){ 
         jsonArray = _jsonArray;
         max = jsonArray.length; 
+        Nav();
         initArrows(jsonArray.length);
 
         $('#home-page').click(function(){
@@ -91,13 +92,17 @@ var Content = (function(){
 
         $(window).hashchange( function(){
           var hash = location.hash.substr(1);
-          if(!hash || !$.isNumeric(hash) || hash>jsonArray.length-1 || hash<0 || hash % 1 != 0){
-            location.hash='#'+(jsonArray.length-1);
-            hash = location.hash.substr(1);
+
+          if(hash === 'archive' || hash === 'projects' || hash === 'portfolio' || hash === 'about'){
+            goPage(hash);
+          }else{
+            if(!hash || !$.isNumeric(hash) || hash>jsonArray.length-1 || hash<0 || hash % 1 != 0){
+              location.hash='#'+(jsonArray.length-1);
+              hash = location.hash.substr(1);
+            }
+            getPage(hash);
           }
-
-          GetPage(hash);
-
+          
         })
         $(window).hashchange();
     }
@@ -148,7 +153,7 @@ var Content = (function(){
     }
 
 
-    function GetPage(page){
+    function getPage(page){
         var image = new Image();
         image.src = "../img/gal/"+jsonArray[page].code;
         image.onload = function(){
@@ -160,19 +165,6 @@ var Content = (function(){
         }
        
     }
-    
-    return {
-        init: init
-    };
-
-}());
-
-
-var Navigation = (function() {
-
-    function init() {
-        Nav();  
-    }
 
     function goHome(){
         $('.main-page-arrows').removeClass('hidden');
@@ -181,6 +173,7 @@ var Navigation = (function() {
         setTimeout(function(){
           $('.info').removeClass('fade');
         },50);
+
         changeCurrent("home");
 
     }
@@ -193,41 +186,29 @@ var Navigation = (function() {
           $('.info').addClass('hidden');
         },50);
         changeCurrent(which);
-
     }
 
     function changeCurrent(newpage){
+
         $('.current').addClass('fade').addClass('hidden').removeClass('current');
         $('.'+newpage+'-page').addClass('current').removeClass('hidden');
         setTimeout(function(){
             $('.'+newpage+'-page').removeClass('fade');
         },0);
+
+        if(newpage === 'home'){
+          window.location = "#"; 
+        }
     }
 
     
     function Nav(){
 
-       $(document).on('click', '.archive-image', function(){
-          var index = $(this).data('index');
-          window.location.href = "#"+index;
-          goHome();
-        });
+      $(document).on('click', '.go-home', function(){
+        goHome();
+      });
 
-       $(document).on('click', '.nav-link', function(){
-            $( ".container" ).animate({
-                left: "0"
-            }, 500);
-            $('.mobile-menu').addClass('hidden').addClass('fade');
-            var location = $(this).data('location');
-            if(location!='home'){
-              goPage(location);
-            }else{
-              goHome();
-            }
-           
-        });
-
-       $('.mobile-menu-trigger').click(function(){
+      $('.mobile-menu-trigger').click(function(){
           if($('.mobile-menu').hasClass('hidden')){
             $( ".container" ).animate({
                 left: "-180px"
@@ -243,7 +224,26 @@ var Navigation = (function() {
               $('.mobile-menu').addClass('hidden').addClass('fade');
           }       
         });
+
+        $(document).on('click', '.nav-link', function(){
+            $( ".container" ).animate({
+                left: "0"
+            }, 500);
+            $('.mobile-menu').addClass('hidden').addClass('fade');
+            var location = $(this).data('location');
+            if(location!='home'){
+              goPage(location);
+            }else{
+              goHome();
+            }
+        });
+       $(document).on('click', '.archive-image', function(){
+          var index = $(this).data('index');
+          window.location.href = "#"+index;
+          goHome();
+        });
     }
+    
     return {
         init: init
     };
@@ -254,7 +254,6 @@ var Main = (function() {
     
     function init() {
         contentLoad();
-        Navigation.init();
     }
 
     function contentLoad(){
