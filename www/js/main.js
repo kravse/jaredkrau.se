@@ -173,7 +173,6 @@ var Content = (function(){
         setTimeout(function(){
           $('.info').removeClass('fade');
         },50);
-
         changeCurrent("home");
 
     }
@@ -195,10 +194,6 @@ var Content = (function(){
         setTimeout(function(){
             $('.'+newpage+'-page').removeClass('fade');
         },0);
-
-        if(newpage === 'home'){
-          window.location = "#"; 
-        }
     }
 
     
@@ -206,6 +201,7 @@ var Content = (function(){
 
       $(document).on('click', '.go-home', function(){
         goHome();
+        window.location = "#"; 
       });
 
       $('.mobile-menu-trigger').click(function(){
