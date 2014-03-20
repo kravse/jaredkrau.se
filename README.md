@@ -15,4 +15,3 @@ The goals for the site are as follows:
 
 4) Highly optimized content loading, so images load almost instantly. 
 
-This is a work in progress. 
