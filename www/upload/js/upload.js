@@ -120,7 +120,7 @@ var UploadContent = (function(){
     	}
 
     	for (var i=firstImage;i>lastImage;i--){
-    		$('.archive-image-holder').append('<div id="box" class="columns small-6 medium-4 large-2 image-block"><img src="../img/thumbnails/'+jsonArray[i].code+'"><textarea>'+jsonArray[i].about+'</textarea><a class="save" href="javascript:void(0)" data-index="'+i+'"></a><a class="delete" href="javascript:void(0)" data-index="'+i+'"></a></div>');
+    		$('.archive-image-holder').append('<div id="box" class="columns small-6 medium-4 large-2 image-block"><img src="../img/thumbnails/'+jsonArray[i].code+'"><div class="portfolio-block"><input class="portfolio" name="portfolio" type="checkbox"><h3>Portfolio</h3></div><textarea>'+jsonArray[i].about+'</textarea><a class="save" href="javascript:void(0)" data-index="'+i+'"></a><a class="delete" href="javascript:void(0)" data-index="'+i+'"></a></div>');
     	}
     }
 

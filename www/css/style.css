@@ -1234,30 +1234,49 @@ textarea {
   border-radius: 8px;
 }
 /* line 221, ../../src/scss/_uploads.scss */
+#uploads .image-block .portfolio-block {
+  width: 100%;
+  display: block;
+  height: 15px;
+  margin: 5px 0 10px;
+}
+/* line 228, ../../src/scss/_uploads.scss */
+#uploads .image-block .portfolio {
+  float: left;
+  display: inline-block;
+}
+/* line 233, ../../src/scss/_uploads.scss */
+#uploads .image-block h3 {
+  display: inline-block;
+  color: #fff;
+  float: right;
+  margin: -4px 0 0;
+}
+/* line 240, ../../src/scss/_uploads.scss */
 #uploads .image-block a {
   display: inline-block;
   width: 40px;
   height: 40px;
   opacity: 0.6;
-  margin-top: 20px;
+  margin-top: 10px;
 }
-/* line 229, ../../src/scss/_uploads.scss */
+/* line 248, ../../src/scss/_uploads.scss */
 #uploads .image-block a:hover {
   opacity: 1;
 }
-/* line 233, ../../src/scss/_uploads.scss */
+/* line 252, ../../src/scss/_uploads.scss */
 #uploads .image-block .save {
   background: url(../img/save.png) no-repeat top left;
   float: left;
   margin-left: 10%;
 }
-/* line 239, ../../src/scss/_uploads.scss */
+/* line 258, ../../src/scss/_uploads.scss */
 #uploads .image-block .delete {
   background: url(../img/delete.png) no-repeat top left;
   float: right;
   margin-right: 10%;
 }
-/* line 247, ../../src/scss/_uploads.scss */
+/* line 266, ../../src/scss/_uploads.scss */
 #uploads .grey {
   position: absolute;
   height: 1000px;
@@ -1269,7 +1288,7 @@ textarea {
   z-index: 2;
   display: block;
 }
-/* line 260, ../../src/scss/_uploads.scss */
+/* line 279, ../../src/scss/_uploads.scss */
 #uploads .popup {
   position: fixed;
   top: 5%;
@@ -1285,7 +1304,7 @@ textarea {
   padding-top: 25px;
   position: relative;
 }
-/* line 274, ../../src/scss/_uploads.scss */
+/* line 293, ../../src/scss/_uploads.scss */
 #uploads .popup h2 {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
@@ -1294,7 +1313,7 @@ textarea {
   text-align: center;
   margin-bottom: 10px;
 }
-/* line 283, ../../src/scss/_uploads.scss */
+/* line 302, ../../src/scss/_uploads.scss */
 #uploads .popup h3 {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
@@ -1305,14 +1324,14 @@ textarea {
   display: inline-block;
   padding-right: 5px;
 }
-/* line 294, ../../src/scss/_uploads.scss */
+/* line 313, ../../src/scss/_uploads.scss */
 #uploads .popup span {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 12px;
   display: inline-block;
 }
-/* line 303, ../../src/scss/_uploads.scss */
+/* line 322, ../../src/scss/_uploads.scss */
 #uploads .popup-thumb {
   margin: 0 auto;
   display: block;
@@ -1320,7 +1339,7 @@ textarea {
   -moz-border-radius: 8px;
   border-radius: 8px;
 }
-/* line 311, ../../src/scss/_uploads.scss */
+/* line 330, ../../src/scss/_uploads.scss */
 #uploads .popup-confirm {
   background: url(../img/save.png) no-repeat top left;
   margin-left: 20px;
@@ -1328,7 +1347,7 @@ textarea {
   height: 40px;
   display: inline-block;
 }
-/* line 319, ../../src/scss/_uploads.scss */
+/* line 338, ../../src/scss/_uploads.scss */
 #uploads .popup-cancel {
   background: url(../img/delete.png) no-repeat top left;
   margin-left: 172px;
@@ -1336,7 +1355,7 @@ textarea {
   height: 40px;
   display: inline-block;
 }
-/* line 327, ../../src/scss/_uploads.scss */
+/* line 346, ../../src/scss/_uploads.scss */
 #uploads .popup-buttons {
   margin: 20px 0;
 }
