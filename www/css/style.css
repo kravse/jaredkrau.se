@@ -1494,24 +1494,20 @@ textarea {
     font-size: 15px;
     font-weight: 600;
   }
-  /* line 145, ../../src/scss/_media.scss */
-  .nav-row .nav .social {
-    display: none;
-  }
-  /* line 148, ../../src/scss/_media.scss */
+  /* line 144, ../../src/scss/_media.scss */
   .nav-row .nav .info {
     display: none;
   }
 
-  /* line 157, ../../src/scss/_media.scss */
+  /* line 153, ../../src/scss/_media.scss */
   .content-container {
     background-color: transparent;
   }
-  /* line 160, ../../src/scss/_media.scss */
+  /* line 156, ../../src/scss/_media.scss */
   .content-container h1, .content-container h2, .content-container h3, .content-container h4, .content-container h5, .content-container h6 {
     font-size: 30px;
   }
-  /* line 165, ../../src/scss/_media.scss */
+  /* line 161, ../../src/scss/_media.scss */
   .content-container p {
     padding-left: 20px;
     color: #fff;
@@ -1521,17 +1517,17 @@ textarea {
     font-weight: 300;
     margin-bottom: 20px;
   }
-  /* line 176, ../../src/scss/_media.scss */
+  /* line 172, ../../src/scss/_media.scss */
   .content-container .portrait {
     max-width: 640px;
   }
-  /* line 179, ../../src/scss/_media.scss */
+  /* line 175, ../../src/scss/_media.scss */
   .content-container .home-page {
     overflow: visible;
     background-size: 100%;
     padding-bottom: 150%;
   }
-  /* line 185, ../../src/scss/_media.scss */
+  /* line 181, ../../src/scss/_media.scss */
   .content-container .left {
     position: absolute;
     top: -51px;
@@ -1541,11 +1537,11 @@ textarea {
     height: 50px;
     background: url("../img/naked-arrow-left.png") no-repeat left center;
   }
-  /* line 194, ../../src/scss/_media.scss */
+  /* line 190, ../../src/scss/_media.scss */
   .content-container .left:hover {
     opacity: 1;
   }
-  /* line 198, ../../src/scss/_media.scss */
+  /* line 194, ../../src/scss/_media.scss */
   .content-container .right {
     position: absolute;
     top: -51px;
@@ -1555,20 +1551,20 @@ textarea {
     height: 50px;
     background: url("../img/naked-arrow-right.png") no-repeat right center;
   }
-  /* line 207, ../../src/scss/_media.scss */
+  /* line 203, ../../src/scss/_media.scss */
   .content-container .right:hover {
     opacity: 1;
   }
-  /* line 212, ../../src/scss/_media.scss */
+  /* line 208, ../../src/scss/_media.scss */
   .content-container .archive-page .archive-buttons-holder {
     top: 14px;
   }
-  /* line 215, ../../src/scss/_media.scss */
+  /* line 211, ../../src/scss/_media.scss */
   .content-container .archive-page .archive-button:hover {
     background-color: transparent;
   }
 
-  /* line 224, ../../src/scss/_media.scss */
+  /* line 220, ../../src/scss/_media.scss */
   #uploads .upload-link {
     font-size: 25px;
     padding-top: 36px;
