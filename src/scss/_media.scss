@@ -68,6 +68,10 @@
 		display:none;
 	}
 
+	.container{
+		padding-bottom:30px;
+	}
+
 	.mobile-hidden{
 		display:none;
 	}
@@ -157,7 +161,17 @@
 				}
 			}
 			.info{
-				display:none;
+				position: fixed;
+				padding-left: 10px;
+				bottom: 0;
+				z-index: 10;
+				background-color: #666;
+				padding-top:0;
+				p{
+					color:#fff;
+					font-size:15px;
+
+				}
 			}
 
 			
