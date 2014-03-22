@@ -133,10 +133,15 @@
 						-ms-text-size-adjust: 100%;
 						text-rendering: geometricPrecision;
 					}
-
+					a:hover{
+						color:#333;
+					}
 					.social{
 						font-size:15px;
 						font-weight:600;
+					}
+					.social:hover{
+						color:#000;
 					}
 						
 				}
