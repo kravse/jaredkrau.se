@@ -19,5 +19,4 @@
 
     $jsonstring = json_encode($json);
     echo $jsonstring;
-    mysql_close($link);
 ?>
