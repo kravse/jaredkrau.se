@@ -2,6 +2,7 @@
 #################################################
 /www/img/gal/*
 /www/img/thumbnails/*
+/www/gallery/*.jpg
 
 # PHP #
 /www/php/login.php
