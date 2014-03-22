@@ -37,6 +37,12 @@
 	.popup-img{
 		margin-left:-50%;
 	}
+
+	#gallery{
+		.gallery-popup-img{
+			margin-left:-50%;
+		}
+	}
 }
 
 
@@ -64,6 +70,10 @@
 
 	.mobile-hidden{
 		display:none;
+	}
+
+	.mobile-fade{
+		opacity:0; 
 	}
 
 	.nav-row{
@@ -158,7 +168,7 @@
 	.content-container{
 		background-color:transparent;
 
-		h1, h2, h3, h4, h5, h6{
+		.page-title{
 			font-size:30px;
 
 		}
@@ -227,7 +237,26 @@
 			padding-top:36px;
 		}
 
+	}
 
+	.page-subheader{
+		font-size:20px;		
+	}
+
+	.project-pod{
+		padding-bottom: 45%;
+
+	}
+
+	.project-pod:hover{
+		border:2px solid transparent;
+
+	}
+
+	#gallery{
+		.gallery-pod{
+			padding-bottom: 63%;
+		}
 	}
 
 }

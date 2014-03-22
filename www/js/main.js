@@ -211,13 +211,13 @@ var Content = (function(){
             }, 500);
             $('.mobile-menu').removeClass('mobile-hidden');
                 setTimeout(function(){
-                  $('.mobile-menu').removeClass('fade');
+                  $('.mobile-menu').removeClass('mobile-fade');
                 },50);
           }else{
              $( ".container" ).animate({
                 left: "0"
               }, 500);
-              $('.mobile-menu').addClass('mobile-hidden').addClass('fade');
+              $('.mobile-menu').addClass('mobile-hidden').addClass('mobile-fade');
           }       
         });
 
@@ -225,7 +225,7 @@ var Content = (function(){
             $( ".container" ).animate({
                 left: "0"
             }, 500);
-            $('.mobile-menu').addClass('mobile-hidden').addClass('fade');
+            $('.mobile-menu').addClass('mobile-hidden').addClass('mobile-fade');
             var location = $(this).data('location');
             if(location!='home'){
               goPage(location);
