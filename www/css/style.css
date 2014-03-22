@@ -862,17 +862,18 @@ textarea {
   font-size: 16px;
   font-weight: 300;
   margin-bottom: 30px;
+  line-height: 1.6em;
 }
-/* line 212, ../../src/scss/_main.scss */
+/* line 213, ../../src/scss/_main.scss */
 .content-container a {
   color: #ff7700;
   text-decoration: none;
 }
-/* line 217, ../../src/scss/_main.scss */
+/* line 218, ../../src/scss/_main.scss */
 .content-container a:hover {
   color: #fff;
 }
-/* line 221, ../../src/scss/_main.scss */
+/* line 222, ../../src/scss/_main.scss */
 .content-container .home-page {
   display: block;
   position: relative;
@@ -882,7 +883,7 @@ textarea {
   background-position: center top;
   background-size: contain;
 }
-/* line 231, ../../src/scss/_main.scss */
+/* line 232, ../../src/scss/_main.scss */
 .content-container .home-page .loader {
   width: 31px;
   position: absolute;
@@ -891,19 +892,19 @@ textarea {
   top: 30%;
   opacity: 0.8;
 }
-/* line 241, ../../src/scss/_main.scss */
+/* line 242, ../../src/scss/_main.scss */
 .content-container .page {
   background-color: #333;
 }
-/* line 245, ../../src/scss/_main.scss */
+/* line 246, ../../src/scss/_main.scss */
 .content-container .content-container {
   width: 100%;
 }
-/* line 249, ../../src/scss/_main.scss */
+/* line 250, ../../src/scss/_main.scss */
 .content-container img {
   width: 100%;
 }
-/* line 253, ../../src/scss/_main.scss */
+/* line 254, ../../src/scss/_main.scss */
 .content-container .left {
   position: absolute;
   top: 0;
@@ -913,7 +914,7 @@ textarea {
   background: url("../img/naked-arrow-left.png") no-repeat center 40%;
   background-size: 90%;
 }
-/* line 263, ../../src/scss/_main.scss */
+/* line 264, ../../src/scss/_main.scss */
 .content-container .right {
   position: absolute;
   top: 0;
@@ -923,33 +924,33 @@ textarea {
   background: url("../img/naked-arrow-right.png") no-repeat center 40%;
   background-size: 90%;
 }
-/* line 273, ../../src/scss/_main.scss */
+/* line 274, ../../src/scss/_main.scss */
 .content-container .left:hover {
   opacity: 0.8;
 }
-/* line 277, ../../src/scss/_main.scss */
+/* line 278, ../../src/scss/_main.scss */
 .content-container .right:hover {
   opacity: 0.8;
 }
-/* line 281, ../../src/scss/_main.scss */
+/* line 282, ../../src/scss/_main.scss */
 .content-container .archive-page {
   position: relative;
 }
-/* line 283, ../../src/scss/_main.scss */
+/* line 284, ../../src/scss/_main.scss */
 .content-container .archive-page .archive-row {
   margin: 0;
   width: 100%;
   padding-bottom: 30px;
 }
-/* line 287, ../../src/scss/_main.scss */
+/* line 288, ../../src/scss/_main.scss */
 .content-container .archive-page .archive-row [class*="column"] + [class*="column"]:last-child {
   float: left;
 }
-/* line 291, ../../src/scss/_main.scss */
+/* line 292, ../../src/scss/_main.scss */
 .content-container .archive-page .archive-image-wrap {
   background-color: transparent;
 }
-/* line 294, ../../src/scss/_main.scss */
+/* line 295, ../../src/scss/_main.scss */
 .content-container .archive-page .archive-image-wrap img {
   width: 100%;
   margin: 25px 0 0;
@@ -957,15 +958,15 @@ textarea {
   -moz-border-radius: 8px;
   border-radius: 8px;
 }
-/* line 303, ../../src/scss/_main.scss */
+/* line 304, ../../src/scss/_main.scss */
 .content-container .archive-page .archive-thumb {
   border: 2px solid transparent;
 }
-/* line 306, ../../src/scss/_main.scss */
+/* line 307, ../../src/scss/_main.scss */
 .content-container .archive-page .archive-thumb:hover {
   border: 2px solid #ff7700;
 }
-/* line 311, ../../src/scss/_main.scss */
+/* line 312, ../../src/scss/_main.scss */
 .content-container .archive-page .archive-next-button {
   display: inline-block;
   width: 45%;
@@ -974,7 +975,7 @@ textarea {
   padding-top: 10px;
   font-size: 20px;
 }
-/* line 320, ../../src/scss/_main.scss */
+/* line 321, ../../src/scss/_main.scss */
 .content-container .archive-page .archive-previous-button {
   display: inline-block;
   width: 45%;
@@ -983,7 +984,7 @@ textarea {
   padding-top: 10px;
   font-size: 20px;
 }
-/* line 330, ../../src/scss/_main.scss */
+/* line 331, ../../src/scss/_main.scss */
 .content-container .archive-page .archive-buttons-holder {
   position: absolute;
   top: 30px;
@@ -992,7 +993,7 @@ textarea {
   max-width: 550px;
   height: 55px;
 }
-/* line 339, ../../src/scss/_main.scss */
+/* line 340, ../../src/scss/_main.scss */
 .content-container .archive-page .archive-button {
   text-decoration: none;
   background-color: transparent;
@@ -1009,23 +1010,23 @@ textarea {
   -ms-transition: all 250ms linear;
   transition: all 250ms linear;
 }
-/* line 356, ../../src/scss/_main.scss */
+/* line 357, ../../src/scss/_main.scss */
 .content-container .archive-page .archive-button:hover {
   background-color: #555;
 }
 
-/* line 364, ../../src/scss/_main.scss */
+/* line 365, ../../src/scss/_main.scss */
 .project-row {
   width: 95% !important;
   margin: 0 auto !important;
   margin-top: 30px !important;
 }
-/* line 368, ../../src/scss/_main.scss */
+/* line 369, ../../src/scss/_main.scss */
 .project-row [class*="column"] + [class*="column"]:last-child {
   float: left;
 }
 
-/* line 374, ../../src/scss/_main.scss */
+/* line 375, ../../src/scss/_main.scss */
 .page-subheader {
   position: absolute;
   left: 0;
@@ -1038,7 +1039,7 @@ textarea {
   margin-bottom: 10px;
 }
 
-/* line 387, ../../src/scss/_main.scss */
+/* line 388, ../../src/scss/_main.scss */
 .project-pod {
   border: 2px solid transparent;
   margin-bottom: 10px;
@@ -1049,7 +1050,7 @@ textarea {
   height: 0;
   padding-bottom: 30%;
 }
-/* line 397, ../../src/scss/_main.scss */
+/* line 398, ../../src/scss/_main.scss */
 .project-pod img {
   position: absolute;
   top: 10px;
@@ -1058,18 +1059,18 @@ textarea {
   margin-left: -48%;
 }
 
-/* line 407, ../../src/scss/_main.scss */
+/* line 408, ../../src/scss/_main.scss */
 .project-pod:hover {
   border: 2px solid #ff7700;
 }
 
-/* line 412, ../../src/scss/_main.scss */
+/* line 413, ../../src/scss/_main.scss */
 #gallery {
   background-color: #ccc;
   font-family: 'Lato', sans-serif;
   display: block;
 }
-/* line 417, ../../src/scss/_main.scss */
+/* line 418, ../../src/scss/_main.scss */
 #gallery .gallery {
   display: block;
   width: 100%;
@@ -1077,22 +1078,22 @@ textarea {
   max-width: 1200px;
   padding-right: 1em;
 }
-/* line 423, ../../src/scss/_main.scss */
+/* line 424, ../../src/scss/_main.scss */
 #gallery .gallery [class*="column"] + [class*="column"]:last-child {
   float: left;
 }
-/* line 427, ../../src/scss/_main.scss */
+/* line 428, ../../src/scss/_main.scss */
 #gallery h1 {
   font-size: 45px;
   font-weight: 400;
   text-align: center;
 }
-/* line 433, ../../src/scss/_main.scss */
+/* line 434, ../../src/scss/_main.scss */
 #gallery p {
   line-height: 1.6em;
   font-size: 17px;
 }
-/* line 438, ../../src/scss/_main.scss */
+/* line 439, ../../src/scss/_main.scss */
 #gallery .gallery-pod {
   margin: 10px 0;
   position: relative;
@@ -1100,7 +1101,7 @@ textarea {
   padding-bottom: 21%;
   overflow: hidden;
 }
-/* line 445, ../../src/scss/_main.scss */
+/* line 446, ../../src/scss/_main.scss */
 #gallery .gallery-pod img {
   position: absolute;
   top: 0;
@@ -1109,7 +1110,7 @@ textarea {
   display: block;
   margin: 0 auto;
 }
-/* line 455, ../../src/scss/_main.scss */
+/* line 456, ../../src/scss/_main.scss */
 #gallery .back-link {
   position: absolute;
   left: 20px;
@@ -1118,11 +1119,11 @@ textarea {
   color: #000;
   z-index: 1;
 }
-/* line 464, ../../src/scss/_main.scss */
+/* line 465, ../../src/scss/_main.scss */
 #gallery .back-link:hover {
   color: #ff7700;
 }
-/* line 468, ../../src/scss/_main.scss */
+/* line 469, ../../src/scss/_main.scss */
 #gallery .gallery-grey {
   position: fixed;
   top: 0;
@@ -1134,7 +1135,7 @@ textarea {
   display: block;
   z-index: 2;
 }
-/* line 480, ../../src/scss/_main.scss */
+/* line 481, ../../src/scss/_main.scss */
 #gallery .gallery-popup-img {
   position: fixed;
   display: block;
@@ -1148,7 +1149,7 @@ textarea {
   background-repeat: no-repeat;
   background-size: contain;
 }
-/* line 494, ../../src/scss/_main.scss */
+/* line 495, ../../src/scss/_main.scss */
 #gallery .body-limit {
   max-height: 100%;
 }
