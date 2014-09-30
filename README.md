@@ -1,7 +1,7 @@
 jaredkrau.se
 ============
 
-A simplistic photoblog made with jQuery. 
+A simplistic photoblog and backend. 
 
 I'm in the process of creating a personal blogging site that is simplistic and streamlined. 
 
